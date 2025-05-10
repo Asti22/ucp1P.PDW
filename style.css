@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #693617, #79420e); 
+  color: white;
+ 
+}
+
+.navbar {
+  background-color: #452602;
+  padding: 12px 0;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 20 px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #f3e6e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #f3e6e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* Hero Section */
+.hero {
+  background-image: url("indonesia.jpg"); /* <- Ganti dengan gambar background kamu */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 20px;
+  background-color: #fff5e0;
+  padding: 10px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  display: none;
+}
+
+.popup-box {
+  background-color: #fffefc;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.popup-box h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #452602;
+}
+
+.popup-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+.popup-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #333;
+}

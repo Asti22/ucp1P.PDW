@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak - Bicara Nusantara</title>
+  <link rel="stylesheet" href="kontak.css">
+
+  <script>
+    function kirimPesan() {
+      alert("✅ Pesan anda terkirim! Terima kasih telah mendaftar.");
+      document.getElementById("formKontak").reset(); // Reset form setelah alert
+    }
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-container">
+      <div class="logo">Bicara Nusantara</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Fitur</a>
+        <a href="contact.html" class="active">Kontak</a>
+      </div>
+    </div>
+  </div>
+  
+
+  <main class="content section">
+
+    <h1>Hubungi Kami</h1>
+    <p>Isi formulir berikut untuk mendaftar atau menghubungi tim kami.</p>
+
+    <form id="formKontak" onsubmit="kirimPesan(); return false;">
+      <label for="nama">Nama:</label><br/>
+      <input type="text" id="nama" name="nama" required><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required><br/>
+
+      <label>Bahasa yang ingin dipelajari:</label><br>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="minat" value="Jawa"> Jawa</label>
+        <label><input type="checkbox" name="minat" value="Sunda"> Sunda</label>
+        <label><input type="checkbox" name="minat" value="Bugis"> Bugis</label>
+        <label><input type="checkbox" name="minat" value="DLL"> DLL</label>
+      </div>
+      
+
+      <button type="submit">Kirim</button>
+    </form>
+  </main>
+</body>
+</html>
