@@ -61,6 +61,7 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 20px;
+   
   }
   
   .section h1,
@@ -90,23 +91,44 @@
   }
   
   
- 
   .comparison-table {
     width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #fbead3; 
+    border: 2px solid #5a3414;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 80px;
   }
+  
   
   .comparison-table th,
   .comparison-table td {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    text-align: center;
+    border: 1px solid rgba(90, 52, 20, 0.3);
+    padding: 12px;
+    text-align: center;       
+    vertical-align: middle;   
+    font-size: 18px;
   }
+  
+  
+  
   
   .comparison-table th {
     background-color: rgba(255, 255, 255, 0.1);
   }
+
+  .comparison-wrapper {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
   
   .visi-misi-box {
     background-image: url('Social Presence in Online Learning with 10 Best Practices.jpeg'); /* Ganti dengan nama file gambarnya */
@@ -196,4 +218,6 @@
     text-align: center;
 
   }
+
+ 
   
